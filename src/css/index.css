@@ -1,6 +1,7 @@
 
 body {
   margin: 0;
+  padding: 30px;
 }
 .teal-font {
     color:black;
@@ -18,31 +19,11 @@ body {
 
 }
 
-/* #projects{
-    background-color: orange;
-    width: 100%;
-    height: auto;
-    display: inline-block;
-}
-
-#contact{
-    background-color: paleturquoise;
-    width: 100%;
-    height: auto;
-    display: inline-block;
-} */
-
 .picture {
     max-width: 100%;
     height: auto;
     margin: 0px;
 }
-
-/* .nav-bar{
-  width: 100vw;
-  background-color: blue;
-} */
-
 
 .box {
   color:white;
@@ -57,6 +38,9 @@ body {
   
 }
 
+#projects_blank {
+  height: 90px;
+}
 .flex-container{
   display: flex;
   flex-direction: column;
@@ -94,26 +78,19 @@ body {
   justify-content: flex-end;
 }
 
-/* .col-5, .col-7 {
-  border: 1px solid black;
-} */
-
 .col-4 {
   text-align: center;
   font-weight: bold;
   color: rgba(47, 188, 146, 1);
   font-size: large;
   text-indent: 35%;
-  padding-top: 35px;
+  padding-top: 30px;
 }
 
 .col-sm-6, .col-8{
   /* border: 1px solid black; */
   padding: 20px;
 }
-/* .container-fluid {
-  border: 1px solid black;
-} */
 
 .project-img {
   border: 1px solid black;
@@ -150,7 +127,6 @@ i {
 }
 
 
-
 .footer {
 
   text-align: center;
@@ -171,4 +147,41 @@ i {
 .btn .links {
   color: black;
   text-decoration: none;
+}
+
+@media (max-width:800px) {
+  #home {
+    margin-top: 50px;
+
+  }
+  #contact {
+    display: none;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .col-8 {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+  }
+
+  .quote {
+    font-size: 20px;
+  }
+
+  .footer-text {
+    margin-bottom: 20px;
+  }
+
+  #projects_blank {
+    display: none;
+  }
+
+  .description {
+    font-size: medium;
+  }
 }
